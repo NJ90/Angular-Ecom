@@ -1,0 +1,4 @@
+
+.topBar{width: 80%; margin:0 auto; display: flex; flex-direction: row; align-items: center; justify-content: space-between; background:#333; padding:20px;}
+.topBar h1{color:#fff}
+button{background: #fff; border:none; color:#333; padding:20px 10px; border-radius: 5px;}
