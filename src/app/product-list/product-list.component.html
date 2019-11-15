@@ -1,0 +1,8 @@
+<div class="conWrap">
+
+<div *ngFor="let products of products">
+    <h3><a>{{ products.name }} </a></h3>
+    <p *ngIf="products.description">{{products.description}}</p>
+    <button (click)="share() toggle()">share</button>
+</div>
+</div>

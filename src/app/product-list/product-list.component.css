@@ -1,0 +1,6 @@
+.conWrap{width: 80%; padding:20px; box-sizing: border-box; margin:0 auto; border: 1px solid #ddd}
+h3{font-size: 24px; font-weight: 600; color:#999; margin-bottom: 0;}
+p{color:#999; margin: 0;}
+a:hover{color:#1976D2; cursor: pointer;}
+button{border:none; }
+button.ng-touched{background:red}
