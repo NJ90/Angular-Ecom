@@ -1,8 +1,11 @@
-<div class="conWrap">
+<div class="conWrap" ng-app="myApp" ng-controller="myCtrl">
+    <div *ngFor="let products of products">
+        <h3><a>{{ products.name }} </a></h3>
+        <p *ngIf="products.description">{{products.description}}</p>
+        <div>
+        <button ng-model="btnText" (click)="toggle()">{{ buttonName }}</button>
+        <!-- <button *ngIf="!buttonTrue" (click)="cancelShare()">shared</button> -->
+          </div>
+    </div>
+</div>
 
-<div *ngFor="let products of products">
-    <h3><a>{{ products.name }} </a></h3>
-    <p *ngIf="products.description">{{products.description}}</p>
-    <button (click)="share() toggle()">share</button>
-</div>
-</div>

@@ -9,14 +9,27 @@ import { products } from '../interfaces/products'
 export class ProductListComponent implements OnInit {
 
   products = products;
+ 
+  // toggleShare($scope) {
+  //   window.alert('Shared!');
+  //   this.btnText = 'Shared';
+  //   }
 
-  share(){
-    window.alert('Shared!');
-    }
-
-
-  constructor() { }
+  public show:boolean = false;
+  public buttonName:any = 'Share';
 
   ngOnInit() {  }
 
+  toggle(){
+    this.show = !this.show;
+
+    if(this.show)
+    this.buttonName = "Shared",
+    window.alert('Shared!')
+    
+    else
+    this.buttonName = "Share",
+    window.alert('Canceled')
+
+  }
 }
